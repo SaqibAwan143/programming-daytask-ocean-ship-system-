@@ -43,15 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DL\BLogic.cs" />
-    <Compile Include="BL\Class1.cs" />
+    <Compile Include="BL\Angle.cs" />
+    <Compile Include="DL\ShipDL.cs" />
+    <Compile Include="BL\Ship.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AngleUI.cs" />
     <Compile Include="UI\MENU%28UI%29.cs" />
-    <Compile Include="UI\ShipFunctions.cs" />
+    <Compile Include="UI\ShipUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\oceannavigation.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

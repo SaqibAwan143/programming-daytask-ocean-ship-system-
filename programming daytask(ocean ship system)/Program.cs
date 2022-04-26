@@ -18,19 +18,19 @@ namespace programming_daytask_ocean_ship_system_
                 char option = MENU_UI_.main_menu();
                 if(option == '1')
                 {
-                    BLogic.addShipintoList( ShipFunctions.add_ship(BLogic.total_ships));
+                    ShipDL.addShipintoList( ShipUI.add_ship());
                 }
                 else if(option == '2')
                 {
-                    ShipFunctions.display_position(BLogic.total_ships);
+                    ShipUI.display_position(ShipDL.total_ships);
                 }
                 else if (option == '3')
                 {
-                    ShipFunctions.check_serial(BLogic.total_ships);
+                    AngleUI.check_serial();
                 }
                 else if (option == '4')
                 {
-                    ShipFunctions.replace(BLogic.total_ships);
+                    ShipUI.replace(ShipDL.total_ships);
                 }
                 else if (option == '5')
                 {

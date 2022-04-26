@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="programming_daytask_ocean_ship_system_.BL.Angle" Collapsed="true">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAIAAAQCAAAAAAAAIAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Angle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="programming_daytask_ocean_ship_system_.classes.ship" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAADgAAAA4AA=</HashCode>
+      <FileName>BL\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="programming_daytask_ocean_ship_system_.BL.ShipDL" Collapsed="true">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAEEAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DL\ShipDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="programming_daytask_ocean_ship_system_.UI.AngleUI" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\AngleUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="programming_daytask_ocean_ship_system_.UI.MENU_UI_" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\MENU(UI).cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="programming_daytask_ocean_ship_system_.UI.ShipUI" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>UI\ShipUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

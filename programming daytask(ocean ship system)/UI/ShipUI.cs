@@ -9,14 +9,14 @@ using programming_daytask_ocean_ship_system_.BL;
 
 namespace programming_daytask_ocean_ship_system_.UI
 {
-    class ShipFunctions
+    class ShipUI
     {
         
-        public static ship add_ship(List<ship> shep)
+        public static ship add_ship()
 
         {
-            angle angleX = new angle();
-            angle angleY = new angle();
+            Angle angleX = new Angle();
+            Angle angleY = new Angle();
             Console.WriteLine("Enter ship name :");
             string nameX = Console.ReadLine();
             Console.WriteLine("Enter degree :");
@@ -40,7 +40,7 @@ namespace programming_daytask_ocean_ship_system_.UI
         {
             Console.WriteLine("Enter the name of the ship..:");
             string nam = Console.ReadLine();
-            ship check = BLogic.check_Ship(nam);
+            ship check = ShipDL.check_Ship(nam);
             if(check != null)
             {
                 for (int i = 0; i < name.Count; i++)
@@ -59,7 +59,7 @@ namespace programming_daytask_ocean_ship_system_.UI
         {
             Console.WriteLine("Enter the ship name :");
             string name = Console.ReadLine();
-            ship rep = BLogic.check_Ship(name);
+            ship rep = ShipDL.check_Ship(name);
             if(rep == null)
             {
                 Console.WriteLine("Ship does not exists");
@@ -68,8 +68,8 @@ namespace programming_daytask_ocean_ship_system_.UI
             {
                 for (int i = 0; i < rename.Count; i++)
                 {
-                    angle angleX = new angle();
-                    angle angleY = new angle();
+                    Angle angleX = new Angle();
+                    Angle angleY = new Angle();
                     Console.WriteLine("Enter degree :");
                     angleX.Degrees = int.Parse(Console.ReadLine());
                     Console.WriteLine("Enter minutes :");
@@ -83,38 +83,11 @@ namespace programming_daytask_ocean_ship_system_.UI
                     Console.WriteLine("Enter Direction :");
                     angleY.Direction = char.Parse(Console.ReadLine());
                     rep.value_change(angleX, angleY);
-                    Console.Clear();
                     Console.ReadKey();
+                    Console.Clear();
                 }
             }
         }
-        public static void check_serial(List<ship> lis)
-        {
-            angle anglX = new angle();
-            angle anglY = new angle();
-            Console.WriteLine("Enter X degree :");
-            anglX.Degrees = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter X minutes :");
-            anglX.Minutes = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter X Direction :");
-            anglX.Direction = char.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y degree :");
-            anglY.Degrees = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y minutes :");
-            anglY.Minutes = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y Direction :");
-            anglY.Direction = char.Parse(Console.ReadLine());
-            ship shp = BLogic.replace_name(anglX, anglY);
-            if(shp == null)
-            {
-                Console.WriteLine("Ship does not exists");
-            }
-            else
-            {
-                Console.WriteLine(shp.Ship_number);
-            }
-            Console.ReadKey();
-            Console.Clear();
-        }
+        
     }
 }

@@ -6,46 +6,25 @@ using System.Threading.Tasks;
 using programming_daytask_ocean_ship_system_.UI;
 using programming_daytask_ocean_ship_system_.BL;
 
-
 namespace programming_daytask_ocean_ship_system_.classes
 {
-    class angle
-    {
-        private int degrees;
-        private float minutes;
-        private char direction;
-        public int Degrees
-        {
-            get { return degrees; }
-            set { degrees = value; }
-        }
-        public float Minutes
-        {
-            get { return minutes; }
-            set { minutes = value; }
-        }
-        public char Direction
-        {
-            get { return direction; }
-            set { direction = value; }
-        }
-    }
+    
     class ship
     {
         private string ship_number;
-        private angle X;
-        private angle Y;
+        private Angle X;
+        private Angle Y;
         public string Ship_number
         {
         get {return ship_number; }
         set { ship_number = value; }
         }
-        public angle x
+        public Angle x
         {
             get { return X; }
             set { X = value; }
         }
-        public angle y
+        public Angle y
         {
             get { return Y; }
             set { Y = value; }
@@ -53,7 +32,7 @@ namespace programming_daytask_ocean_ship_system_.classes
         public ship()
         {
         }
-        public ship(string n,angle x,angle y)
+        public ship(string n,Angle x,Angle y)
         {
             ship_number = n;
             X = x;
@@ -63,7 +42,7 @@ namespace programming_daytask_ocean_ship_system_.classes
         {
             Console.WriteLine("Ship is at "+X.Degrees+ "\u00b0"+X.Minutes+"'"+X.Direction +" and "+Y.Degrees+ "\u00b0"+Y.Minutes+"'"+Y.Direction);
         }
-        public void value_change(angle x,angle y)
+        public void value_change(Angle x,Angle y)
         {
             this.X = x;
             this.Y = y;

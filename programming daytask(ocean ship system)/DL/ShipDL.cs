@@ -8,7 +8,7 @@ using programming_daytask_ocean_ship_system_.classes;
 
 namespace programming_daytask_ocean_ship_system_.BL
 {
-    class BLogic
+    class ShipDL
     {
          public static List<ship> total_ships = new List<ship>();
         public static void addShipintoList(ship asd)
@@ -26,7 +26,7 @@ namespace programming_daytask_ocean_ship_system_.BL
             }
             return null;
         }
-        public static ship replace_name(angle angX,angle angY)
+        public static ship replace_name(Angle angX,Angle angY)
         {
             for (int i = 0; i < total_ships.Count; i++)
             {
